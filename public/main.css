@@ -86,6 +86,7 @@
     width: 221px;
     height: 126px;
     margin-left: 44px;
+    /* margin-bottom: 60px; */
 }
 
 .left_1_name {
@@ -294,7 +295,7 @@
     /* margin-bottom: 238.43px; */
     margin-left: 56.07px;
     /* margin-right: 415.41px; */
-    width: 499.52px;
+    width: 439.52px;
     height: 116.74px;
     /* background: #ffb400; */
     font-family: Inter;
@@ -353,4 +354,16 @@ border: none;
     margin-top: 8px;
     margin-right: 29px;
     position: relative;
+}
+
+.marginer_2{
+   position: relative;
+    width: 220px;
+    height: 0px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    margin-top: 39px;
+    border: 1.5px solid #dcdcee;
+
+    margin-top: 60px;
 }
