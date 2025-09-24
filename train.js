@@ -130,3 +130,21 @@
 
 
 // console.log(test()); 
+
+
+
+
+// B-TASK
+
+function countDigits(str) {
+  if (typeof str !== 'string') return 0;
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    const ch = str[i];
+    if (ch >= '0' && ch <= '9') count++;
+  }
+  return count;
+}
+
+
+console.log(countDigits("gh7a3j5y6we2ta87nm2")); 
