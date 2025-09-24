@@ -4,7 +4,7 @@ const http = require("http");
 const mongodb = require("mongodb");
 
 let db;
-const connectionString = "mongodb+srv://abdulloh:a0GNBA3BMOT1L2yW@cluster0.l8igo7a.mongodb.net/"
+const connectionString = "mongodb+srv://abdulloh:a0GNBA3BMOT1L2yW@cluster0.l8igo7a.mongodb.net/Rejaaa"
 
 mongodb.connect(connectionString,
     {
@@ -22,7 +22,7 @@ mongodb.connect(connectionString,
         const app = require("./app");
         const server = http.createServer(app);
       let PORT = 3000;
-      server.listen(PORT, function () {
+      server.listen(PORT,  () => {
     console.log(` The server is tunning successfully on port: ${PORT}, http://localhost:${PORT}`
 
     );

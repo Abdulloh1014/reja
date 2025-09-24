@@ -31,7 +31,7 @@ app.set("view engine", "ejs");
 // 4: Routing code
 
 app.post("/create-item", (req, res) => {
-    console.log("user entered / createm item");
+    console.log("user entered /create-item");
     const new_reja = req.body.reja;
     console.log(req.body);
    db.collection("plans").insertOne({reja: new_reja}, (err, data) => {
@@ -60,5 +60,8 @@ app.get("/", function (req, res) {
     })
 
 });
+
+
+
 
 module.exports = app;
