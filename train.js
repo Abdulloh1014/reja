@@ -124,27 +124,55 @@
 // console.log("passed here 1");  
 
 
+// TASK - A !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 // function test(harf = "a", soz = "bolakay") {
 //   return soz.split(harf).length - 1;
 // }
-
-
 // console.log(test()); 
 
 
 
 
-// B-TASK
+// TASK - B   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-function countDigits(str) {
-  if (typeof str !== 'string') return 0;
-  let count = 0;
-  for (let i = 0; i < str.length; i++) {
-    const ch = str[i];
-    if (ch >= '0' && ch <= '9') count++;
+// function countDigits(str) {
+//   if (typeof str !== 'string') return 0;
+//   let count = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     const ch = str[i];
+//     if (ch >= '0' && ch <= '9') count++;
+//   }
+//   return count;
+// }
+// console.log(countDigits("gh7a3j5y6we2ta87nm2")); 
+
+
+// TASK - C  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+class shop {
+  constructor(olma, nok, uzum) {
+    this.olma = olma;
+    this.nok = nok;
+    this.uzum = uzum;
   }
-  return count;
+  
+  qoldiq(soat) {
+    console.log(`Hozir dokonimizda soat ${soat} da ${this.olma}kg olma, ${this.nok}kg nok, ${this.uzum}kg uzum meva mahsuloti mavjud.`)
+  } 
+  
+  sotildi(narx) {
+ this.olma = this.olma - narx;
+ }
+  
+  qabul(meva) {
+ this.uzum = this.uzum + meva;
+ }
+  
 }
 
-
-console.log(countDigits("gh7a3j5y6we2ta87nm2")); 
+const shop1 = new shop(35, 10, 50)
+shop1.qoldiq("21:10");
+shop1.sotildi(13);
+shop1.qabul(26);
+shop1.qoldiq("21:50");
