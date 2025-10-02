@@ -182,12 +182,25 @@
 
 // TASK - D !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-function test(soz1 = "Abdulloh", soz2 = "Abdulloh") {
-  return soz1.split('').sort().join('') === soz2.split('').sort().join('');
-}
+// function test(soz1 = "Abdulloh", soz2 = "Abdulloh") {
+//   return soz1.split('').sort().join('') === soz2.split('').sort().join('');
+// }
 
-console.log(test()); 
+// console.log(test()); 
 
 // split('') --> stingni harflarga bo'lyabti
 // sort() --> harflarni alfabit bo'yicha tartibga solyabti
 // join('') --> bo'lingan harflarni yana stirnga qaytaryabti
+
+
+
+
+// TASK - E !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+function test(soz1) {
+   return soz1.split('').reverse().join('');
+}
+
+console.log(test("world"));
+
+//.  http://72.60.208.224:4010/
