@@ -1,3 +1,5 @@
+console.log("Train ishga tushdi!")
+
 
 // console.log("Jack Ma maslahatlari");
 // const list = [
@@ -197,10 +199,23 @@
 
 // TASK - E !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-function test(soz1) {
-   return soz1.split('').reverse().join('');
-}
+// function test(soz1) {
+//    return soz1.split('').reverse().join('');
+// }
 
-console.log(test("world"));
+// console.log(test("world"));
 
 //.  http://72.60.208.224:4010/
+
+
+
+// TASK - F    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+function findDoublers(soz) {
+  return new Set(soz).size !== soz.length;
+}
+
+console.log(findDoublers("Maqsad"));
+
+// new --> yangi obyekt hosil qilyabti
+// set() --> faqat takrorlanmagan harflarni saqlayabti
