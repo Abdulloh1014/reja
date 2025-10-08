@@ -20,14 +20,15 @@ fs.readFile("database/user.json", "utf8", (err, data) => {
 });
 
 // 1 Kirish. code
-app.use(express.static("public"));
-app.use(express.json());
-app.use(express.urlencoded({extended: true}));
+app.use(express.static("public"));  // public folderini userlarga ochib beryabti
+app.use(express.json());          // kirayotgan json formatdagi datani objectga o'girib beradi !*(client va server orasidagi data json bo'ladi)*!
+app.use(express.urlencoded({extended: true}));  // Bu yerda `urlencoded()` **formadan kelgan ma’lumotni JSON shaklida `req.body` ga joylashtirish** vazifasini bajaradi.
+
 
 // 2: Session code
 // 3: Views code
-app.set("views", "views");
-app.set("view engine", "ejs");
+app.set("views", "views");   // shablon fayllari qayerda joylashganini belgilaydi.    set() – Express’da ilova sozlamalarini o‘rnatish uchun ishlatiladi.
+app.set("view engine", "ejs");  // EJS shablon dvigatelidan foydalanishni yoqadi.
 
 // 4: Routing code
 
@@ -75,8 +76,8 @@ app.post("/delete-all", (req, res) => {
     }
 });
 
-app.get('/author', (req, res) => {
-    res.render("author", {user: user});
+app.get('/public', (req, res) => {
+    res.render("public", {user: user});
 })
 app.get("/", function (req, res) {
     console.log("user entered /");

@@ -1,9 +1,9 @@
 
-const http = require("http");
+const http = require("http");   // node.js core modelini chaqirib olyabmiz
 
 const mongodb = require("mongodb");
 
-let db;
+
 const connectionString = "mongodb+srv://abdulloh:a0GNBA3BMOT1L2yW@cluster0.l8igo7a.mongodb.net/Rejaaa"
 
 mongodb.connect(connectionString,
@@ -20,9 +20,9 @@ mongodb.connect(connectionString,
 
         
         const app = require("./app");
-        const server = http.createServer(app);
+        const server = http.createServer(app);   // http.createServer() → server yaratadi
       let PORT = 4010;
-      server.listen(PORT,  () => {
+      server.listen(PORT,  () => {              // serverni ishga tushiryabmiz
     console.log(` The server is tunning successfully on port: ${PORT}, http://localhost:${PORT}`
 
     );
