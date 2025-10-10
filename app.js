@@ -76,14 +76,14 @@ app.post("/delete-all", (req, res) => {
     }
 });
 
-app.get('/public', (req, res) => {
-    res.render("public", {user: user});
+app.get('/author', (req, res) => {
+    res.render("author", {user: user});
 })
 app.get("/", function (req, res) {
     console.log("user entered /");
     db.collection("plans").find().toArray((err,data) => {
         if(err) {
-            console.log(err);
+            console.log(err); 
             res.end("Nimadir xato bor");
         } else {
             console.log(data);

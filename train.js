@@ -211,11 +211,21 @@ console.log("Train ishga tushdi!")
 
 // TASK - F    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-function findDoublers(soz) {
-  return new Set(soz).size !== soz.length;
-}
+// function findDoublers(soz) {
+//   return new Set(soz).size !== soz.length;
+// }
 
-console.log(findDoublers("Maqsad"));
+// console.log(findDoublers("Maqsad"));
 
 // new --> yangi obyekt hosil qilyabti
 // set() --> faqat takrorlanmagan harflarni saqlayabti
+
+
+
+// TASK - G    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+function getHighestIndex(raqam = [7, 33, 9, 2, 33, 6, 12]) {
+  const max = Math.max(...raqam);         
+  return raqam.findIndex(ele => ele === max);
+}
+console.log(getHighestIndex()); 
