@@ -228,4 +228,4 @@ function getHighestIndex(raqam = [7, 33, 9, 2, 33, 6, 12]) {
   const max = Math.max(...raqam);         
   return raqam.findIndex(ele => ele === max);
 }
-console.log(getHighestIndex()); 
+console.log("Natija:",getHighestIndex()); 
